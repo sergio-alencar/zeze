@@ -1,0 +1,81 @@
+.cardapios {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  margin-top: 60px;
+}
+
+.cardapios h2 {
+  margin-bottom: 20px;
+}
+
+.cardapio-item,
+.cardapio-item span,
+.cardapios h2 {
+  grid-column: 2;
+}
+
+.cardapio-foto {
+  max-width: 360px;
+  max-height: 200px;
+}
+
+.cardapio-item {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.cardapio-item > img {
+  grid-row: 1/-1;
+  border-radius: 4px;
+  margin-right: 40px;
+}
+
+.cardapio-item p {
+  max-width: 32ch;
+}
+
+.cardapio-item-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.cardapio-descricao {
+  text-align: left;
+}
+
+.cardapio-final {
+  margin-bottom: 120px;
+}
+
+@media (max-width: 1200px) {
+  .cardapios {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .cardapio-item {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .cardapio-item,
+  .cardapio-item span,
+  .cardapios h2 {
+    grid-column: 1;
+  }
+  .cardapio-foto {
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 12px;
+  }
+  .cardapio-item p {
+    max-width: 100%;
+  }
+  .cardapio-item-2 {
+    margin-bottom: 12px;
+  }
+}

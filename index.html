@@ -5,20 +5,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zezé Lanches | Hamburgueria Clássica</title>
+  <title>Zezé | Hamburgueria Clássica</title>
   <meta name="description" content="O melhor hambúrguer de BH! Cardápio variado, com opções vegetarianas e veganas. Entrega grátis em toda a região metropolitana de BH sem custos.">
 
   <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sarabun:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
   <header class="header-bg">
-    <div class="header">
-      <a href="./">
-        <img src="./img/zeze.svg" alt="Zezé">
-      </a>
+    <div class="header container">
+      <div class="header-logo">
+        <a href="./">
+          <img src="./img/zeze.svg" alt="Zezé">
+        </a>
+      </div>
       <nav aria-label="primaria">
-        <ul class="header-menu">
+        <ul class="header-menu font-1-xxs cor-0">
           <li><a href="./cardapio.html">Cardápio</a></li>
           <li><a href="./unidades.html">Unidades</a></li>
           <li><a href="./contato.html">Contato</a></li>
@@ -28,11 +34,11 @@
   </header>
 
   <main class="introducao-bg">
-    <div class="introducao">
+    <div class="introducao container">
       <img src="./img/fotos/introducao.jpg" alt="Hambúrguer">
       <div class="introducao-conteudo">
-        <h1>O melhor hambúrguer de BH!</h1>
-        <div class="introducao-vantagens">
+        <h1 class="font-1-xl cor-0">O melhor hambúrguer de BH!</h1>
+        <div class="introducao-vantagens font-2-s cor-4">
           <img src="./img/icones/intro/customizar.svg" alt="">
           <span>Monte seu hambúrguer do seu jeito</span>
           <img src="./img/icones/intro/veg.svg" alt="">
@@ -42,13 +48,79 @@
           <img src="./img/icones/intro/dinheiro.svg" alt="">
           <span>Aceitamos cartões de alimentação e refeição</span>
         </div>
-      </div>
-      <div>
-        <a href="./cardapio.html">Faça seu pedido</a>
+        <div>
+          <a class="botao" href="./cardapio.html">Faça seu pedido</a>
+        </div>
       </div>
     </div>
-
   </main>
+
+  <article class="aplicativos container">
+    <h2 class="font-1-l cor-12">Peça pelos aplicativos parceiros</h2>
+    <div class="aplicativos-logos">
+      <a href="https://www.ifood.com.br" target="_blank"><img src="./img/icones/aplicativos/ifood.svg" alt=""></a>
+      <a href="https://food.99app.com" target="_blank"><img src=" ./img/icones/aplicativos/99food.svg" alt=""></a>
+      <a href="https://www.rappi.com.br" target="_blank"><img src=" ./img/icones/aplicativos/rappi.svg" alt=""></a>
+      <a href="https://www.ubereats.com" target="_blank"><img src=" ./img/icones/aplicativos/ubereats.svg" alt=""></a>
+    </div>
+  </article>
 </body>
+
+<article class="cardapio-bg">
+  <div class="cardapio">
+    <div class="cardapio-texto">
+      <h2 class="font-1-l cor-0"> Conheça nosso cardápio</h2>
+      <p class="font-2-s cor-4">Opções diversas de hambúrgueres,<br>sanduíches, acompanhamentos e bebidas</p>
+      <a class="botao" href="./cardapio.html">Veja mais</a>
+    </div>
+    <img src="./img/fotos/home-cardapio.jpg" alt="Homem segurando hambúrguer">
+  </div>
+</article>
+
+<article class="unidades-bg">
+  <div class="unidades container">
+    <h2 class="font-1-l cor-0">Visite um de nossos restaurantes</h2>
+    <div class="unidades-lista">
+      <div class="unidades-restaurante">
+        <a href="./unidades.html"><img src="./img/fotos/floresta-home.jpg" alt=""></a>
+        <p class="font-1-s-c cor-0">Floresta</p>
+        <p class="font-2-xxs cor-4">Rua Itajubá, 111<br>Floresta - Belo Horizonte - MG<br>31 9999-1111</p>
+      </div>
+      <div class="unidades-restaurante">
+        <a href="./unidades.html"><img src="./img/fotos/savassi-home.jpg" alt=""></a>
+        <p class="font-1-s-c cor-0">Savassi</p>
+        <p class="font-2-xxs cor-4">Avenida Getúlio Vargas, 222<br>Savassi - Belo Horizonte - MG<br>31 9999-2222</p>
+      </div>
+      <div class="unidades-restaurante">
+        <a href="./unidades.html"><img src="./img/fotos/pampulha-home.jpg" alt=""></a>
+        <p class="font-1-s-c cor-0">Pampulha</p>
+        <p class="font-2-xxs cor-4">Avenida Otacílio Negrão de Lima, 333<br>São Luís - Belo Horizonte - MG<br>31 9999-3333</p>
+      </div>
+    </div>
+  </div>
+</article>
+
+<footer class="footer-bg">
+  <div class="footer container">
+    <a href="./"><img src="./img/zeze.svg" alt=""></a>
+    <div class="footer-contato">
+      <p class="font-1-s-c cor-0">Contato</p>
+      <a class="font-2-xxs cor-5" href="tel:+5531994396187">31 9999-1111</a>
+      <a class="font-2-xxs cor-5" href="mailto:sergiofalencar@gmail.com">contato@zezelanches.com</a>
+      <div class="footer-redes">
+        <a href="https://wa.me/+5531994396187/" target="_blank"><img src="./img/icones/redes/whatsapp.svg" alt=""></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="./img/icones/redes/instagram.svg" alt=""></a>
+        <a href="https://www.facebook.com" target="_blank"><img src="./img/icones/redes/facebook.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="footer-informacoes">
+      <p class="font-1-s-c cor-0">Informações</p>
+      <a class="font-1-s cor-5" href="./cardapio.html">Cardápio</a>
+      <a class="font-1-s cor-5" href="./unidades.html">Unidades</a>
+      <a class="font-1-s cor-5" href="./contato.html">Contato</a>
+    </div>
+    <p class="font-1-xs cor-5 footer-copy">Zezé Lanches©. Alguns direitos reservados.</p>
+  </div>
+</footer>
 
 </html>

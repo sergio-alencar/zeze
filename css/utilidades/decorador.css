@@ -1,0 +1,13 @@
+.decorador {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  grid-row: 1/12;
+  justify-self: left;
+  text-align: right;
+}
+
+@media (max-width: 1200px) {
+  .decorador {
+    display: none;
+  }
+}

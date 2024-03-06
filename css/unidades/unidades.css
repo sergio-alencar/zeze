@@ -1,0 +1,72 @@
+.unidades {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  margin-top: 60px;
+}
+
+.unidades-bairro {
+  margin-bottom: 80px;
+}
+
+.unidades-informacao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.unidades-informacao h1,
+.unidades-informacao p {
+  grid-column: 1;
+  margin-bottom: 12px;
+}
+
+.unidades-bairro .unidades-mapa {
+  grid-column: 2;
+  grid-row: 1/6;
+}
+
+.unidades-informacao .unidades-mapa img {
+  border-radius: 4px;
+  width: 460px;
+}
+
+.unidades-mapa {
+  justify-self: right;
+}
+
+@media (max-width: 1200px) {
+  .unidades {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .unidades-bairro {
+    margin-bottom: 60px;
+  }
+  .unidades-informacao {
+    grid-template-columns: 1fr;
+  }
+  .unidades-bairro .unidades-mapa {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .unidades-mapa {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .unidades {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .unidades-bairro {
+    margin-bottom: 48px;
+  }
+  .unidades-informacao p a img {
+    width: 20px;
+    height: 20px;
+  }
+  .unidades-informacao .unidades-mapa img {
+    max-width: 100%;
+  }
+}
