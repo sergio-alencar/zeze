@@ -58,6 +58,9 @@
 }
 
 @media (max-width: 800px) {
+  .cardapios {
+    margin-top: 24px;
+  }
   .cardapio-item {
     grid-template-columns: 1fr;
     justify-content: center;
@@ -77,5 +80,8 @@
   }
   .cardapio-item-2 {
     margin-bottom: 12px;
+  }
+  .cardapio-final {
+    margin-bottom: 64px;
   }
 }

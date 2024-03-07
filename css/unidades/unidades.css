@@ -1,4 +1,4 @@
-.unidades {
+.unidades-pagina {
   display: grid;
   grid-template-columns: 1fr 5fr;
   margin-top: 60px;
@@ -34,7 +34,7 @@
 }
 
 @media (max-width: 1200px) {
-  .unidades {
+  .unidades-pagina {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -55,7 +55,7 @@
 }
 
 @media (max-width: 800px) {
-  .unidades {
+  .unidades-pagina {
     padding-top: 12px;
     padding-bottom: 12px;
   }

@@ -4,6 +4,7 @@
   grid-row: 1/12;
   justify-self: left;
   text-align: right;
+  user-select: none;
 }
 
 @media (max-width: 1200px) {
