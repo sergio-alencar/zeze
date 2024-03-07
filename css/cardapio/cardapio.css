@@ -43,6 +43,10 @@
   margin-bottom: 8px;
 }
 
+.cardapio-titulo img {
+  align-self: center;
+}
+
 .cardapio-descricao {
   text-align: left;
 }
@@ -54,6 +58,14 @@
 @media (max-width: 1200px) {
   .cardapios {
     grid-template-columns: 1fr;
+  }
+  .cardapio-titulo {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2px;
+  }
+  .cardapio-titulo img {
+    transform: scale(0.75);
   }
 }
 
@@ -80,6 +92,9 @@
   }
   .cardapio-item-2 {
     margin-bottom: 12px;
+  }
+  .cardapio-titulo img {
+    transform: scale(0.7);
   }
   .cardapio-final {
     margin-bottom: 64px;
